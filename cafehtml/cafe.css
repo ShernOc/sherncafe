@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* background */
+body,html{
+    /* background-image:url("./Images/bg.jpg");
+    background-size:cover; */
+    background-color: #E6DDC6;
+    width:100%;
+    height: auto;
+    padding:10px;
+    background-position: center;
+    background-repeat:no-repeat;
+
+}
+
+/* navbar image  */
+.navigation{
+    background-image: url("./Images/c3.jpg");
+    background-size:cover;
+    background-position:top;
+    background-repeat: no-repeat;
+    height:50%;
+    position:relative;
+    border-radius:20px;
+}
+
+/* navbar */
+.navigation nav{
+    margin:0;
+    width:100%;
+    padding:10px;
+}
+
+/* hi element */
+.navigation h1{
+    padding-top:10px;
+    padding-left:10px;
+    font-family:"Merienda", sans-serif;
+    color:rgb(215, 213, 213); 
+    margin:0;
+    font-weight: lighter;
+ 
+}
+
+ /* subscript */
+.navigation h4{
+    font-size:16px;
+    padding-left:40px; 
+    font-family:"Merienda", sans-serif;
+    color:rgb(215, 213, 213);
+    margin:0;
+}
+
+
+.info{
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    font-family:"Merienda", sans-serif;
+    font-size:20px;
+    color:rgb(215, 213, 213);
+    padding: 100px;
+    padding-bottom:10px;
+
+
+}
+
+.info span{
+    background-color:rgb(196, 187, 187) ;
+    padding:10px;
+    background-position:center;
+    border-radius: 20px;
+    color:#353430;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+li{
+    /* font-family:'Lucida Sans', 'Lucida', Verdana, sans-serif; */
+    font-family:"Merienda", sans-serif;
+    font-size:25px;
+    color:rgb(215, 213, 213);
+    display:inline-block;
+    justify-content:space-evenly;
+    padding-left:60px;
+}
+
+nav{
+    text-align: center;
+    align-items: center;
+    float:left;
+    gap:10px;
+}
+
+a:link{
+    text-decoration: none;
+  }
+
+a {
+    color: inherit;
+  }
+
+
+/* main */
+.main{
+    background-color:#f5f3eb;
+    margin-top:50px;
+    object-fit:cover;
+    height: auto;
+    width: auto;
+    justify-content: space-evenly;
+    justify-items: center;
+    position:relative;
+    align-items:center;
+    margin-left:10px;
+    margin-right:10px;
+    padding:30px;
+    border-radius:20px;
+    color:#353430;
+    font-family:"Merienda", sans-serif;
+    
+}
+
+/* rgb(186, 176, 163) */
+
+.contents{
+    /* background-color:#C2B8A3; */
+    background-color:#E6DDC6 ;
+    border-radius:10px;
+    flex-wrap: wrap;
+    justify-items:center;
+    padding:10px;
+    display:inline-block;
+    margin:20px;; 
+    justify-content:center;
+    position:relative;
+}
+
+/* images dimension */
+.contents img{
+    width:120px;
+    height:auto;
+    margin:auto;
+} 
+
+.order{
+    float:right;
+    background-color:#353430;
+    border-radius:5px;
+    color: whitesmoke;
+    padding:5px;
+    margin:5px;
+    background-position:center;
+    font-weight: bold;
+}
+
+.cash{
+    float:left;
+    font-weight:bolder;
+    font-size:20px;
+    background-color:unset;
+}
+
+/* middle image */
+.image{
+    background-image:url("./Images/c9.jpg");
+    border-radius:10px;
+    width:100%;
+    height:200px;
+    margin:auto;
+    position:relative; 
+
+/* font  */
+    padding:100px;
+    font-size: large;
+    font-weight: bold;
+    justify-items: center;
+    background-size:cover;
+    color:black;
+}
+
+.image span{
+   background-color:#353430;
+   color: whitesmoke;
+   padding:10px;
+   background-position:center;
+   border-radius:20px;
+   font-size: 16px;
+   font-weight: bold;
+}
+
+/* footer */
+
+footer{
+    background-image:url("./Images/f1.jpg");
+    /* display:block; */
+    background-size: cover;
+    border-radius:10px;
+    position:relative;
+    justify-items: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:250px;
+    margin:auto;
+    position:relative;
+
+}
+
+
+
+footer h1{
+    padding-top:10px;
+    font-family:"Merienda", sans-serif;
+    color:rgb(215, 213, 213); 
+    margin:0;
+    font-weight: lighter;
+ 
+}
+
+ /* subscript */
+footer h4, footer p{
+    font-size:16px;
+    padding-left:30px; 
+    font-family:"Merienda", sans-serif;
+    color:rgb(189, 179, 179);
+    margin:0;
+}
+
+
+
+
+/* about */
+.about li{
+    color: black;
+    
+}
+
+.about, .coffee1{
+    justify-items: center;
+}
+
+.coffee1{
+    background-size:contain;
+
+}
+
+/* contact */
