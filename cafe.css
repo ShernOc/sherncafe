@@ -55,16 +55,14 @@ body,html{
     margin:0;
 }
 
-
 .info{
     /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
     font-family:"Merienda", sans-serif;
     font-size:20px;
     color:rgb(215, 213, 213);
-    padding: 100px;
+    padding-top:10px;
     padding-bottom:10px;
-
-
+    padding-left: 100px;
 }
 
 .info span{
@@ -230,21 +228,36 @@ footer h4, footer p{
 }
 
 
-
-
 /* about */
 .about li{
-    color: black;
-    
+    color: black; 
 }
 
 .about, .coffee1{
     justify-items: center;
 }
 
-.coffee1{
-    background-size:contain;
+.coffee1 img{
+    background-size:cover;
+    width:600px;
+    height:auto;
 
 }
 
-/* contact */
+/* menu */
+.menu{
+    column-count:2;
+}
+
+.menu img{
+    background-size:cover;
+    border-radius:20px;
+    width:100%;
+    height:150%;
+    margin:auto;
+    position:relative; 
+}
+
+
+
+

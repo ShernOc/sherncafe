@@ -23,3 +23,9 @@ Authentication: Flask-JWT-Extended, OAuth
 Migrations: Alembic
 Security: Flask-Bcrypt, Flask-CORS
 Deployment: Render
+
+
+ 
+
+<!--
+Future: Add the login page -->
