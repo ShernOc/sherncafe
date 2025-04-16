@@ -41,46 +41,66 @@
     
     <!-- main -->
     <div class="main">
-        
-    <div class="order">
-        <h1>Make Your Order ..</h1>
-        <br>
-        <form action="all-orders" method="get">
-    
-            <input list="orders" name="orders">
-            <input type="submit">
+        <div class="order">
+            <form action="all-orders" method="get">
+            <h1>Make Your Order ..</h1>
+            <br>
+            <input list="orders" name="orders" id="search" placeholder="Search ">
+            <br>
+            <br>
             <datalist id="orders">
-            <h3>Coffees</h3>
-            <option value="Cappuccino - 290">Cappuccino - 290</option>
-            <option value="Double Expresso - 290">Double Expresso - 290</option>
-            <option value="Latte - 290">Latte - 290</option>
-            <option value="Hazelnut Mocha - 300">Hazelnut Mocha - 300</option>
-            <option value="Mocha - 300">Mocha - 300</option>
-            <option value="Single Coffee - 250">Single Coffee - 250</option>
+                <h3>Coffees</h3>
+                <option value="Cappuccino - 290">Cappuccino - 290</option>
+                <option value="Double Expresso - 290">Double Expresso - 290</option>
+                <option value="Latte - 290">Latte - 290</option>
+                <option value="Hazelnut Mocha - 300">Hazelnut Mocha - 300</option>
+                <option value="Mocha - 300">Mocha - 300</option>
+                <option value="Single Coffee - 250">Single Coffee - 250</option>
+                <br>
+                
+                <!-- Tea -->
+                <h3>Tea</h3>
+                <option value="Kenyan Tea - 290">Kenyan Tea - 290</option>
+                <option value="Tangawizi Tea- 290">Tangawizi Tea- 290</option>
+                <option value="Masala Tea - 290">Masala Tea - 290</option>
+                <option value="Chamomile tea - 290">Chamomile tea - 290</option>
+                <option value="Iced Tea - 300">Iced Tea - 300</option>
+                <option value="Hot Chocolate - 300">Hot Chocolate - 300</option>
+                
+                <!-- pastries -->
+                <br>
+                <h3>Pastries</h3>
+                <option value="Butter Croissant - 290">Butter Croissant - 290 </option>
+                <option value="Chicken Pie - 290">Chicken Pie - 290</option>
+                <option value="Samosas- 290">Samosas- 290</option>
+                <option value="Burger - 890">Burger - 890</option>
+                <option value="Mandaze - 200">Mandaze - 200</option>
+                <option value="Eggs and Toast- 600">Eggs and Toast- 600</option>
+            </datalist>
             <br>
-
-            <!-- Tea -->
-            <h3>Tea</h3>
-            <option value="Kenyan Tea - 290">Kenyan Tea - 290</option>
-            <option value="Tangawizi Tea- 290">Tangawizi Tea- 290</option>
-            <option value="Masala Tea - 290">Masala Tea - 290</option>
-            <option value="Chamomile tea - 290">Chamomile tea - 290</option>
-            <option value="Iced Tea - 300">Iced Tea - 300</option>
-            <option value="Hot Chocolate - 300">Hot Chocolate - 300</option>
-
-            <!-- pastries -->
             <br>
-            <h3>Pastries</h3>
-            <option value="Butter Croissant - 290">Butter Croissant - 290 </option>
-            <option value="Chicken Pie - 290">Chicken Pie - 290</option>
-            <option value="Samosas- 290">Samosas- 290</option>
-            <option value="Burger - 890">Burger - 890</option>
-            <option value="Mandaze - 200">Mandaze - 200</option>
-            <option value="Eggs and Toast- 600">Eggs and Toast- 600</option>
-        </datalist>
-        <br>
-          </form>
-          <br>
+            <fieldset>
+                <legend><b>Billing Method</b></legend>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Full names">
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" name="" id="email" value="email@gmail.com">
+                <br><br>
+                <label for="city">City:</label>
+                <input type="text" name="" id="city" placeholder="Nairobi">
+                <br><br>
+                <b> Mode of payment</b>
+                <br>
+                <input type="radio" name="payment" id="" value="Mpesa">Mpesa 
+                
+                <input type="radio" name="payment" id="" value="Credit Card">Credit Card
+                <br>
+                <br>
+                <input type="submit" id="submit">
+            </fieldset>
+            <br>
+        </form>
 
         <!-- The second option -->
         <!-- <h3>Tea</h3>
