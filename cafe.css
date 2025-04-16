@@ -143,7 +143,7 @@ a {
     margin:auto;
 } 
 
-.order{
+.items{
     float:right;
     background-color:#353430;
     border-radius:5px;
@@ -204,6 +204,7 @@ footer{
     height:250px;
     margin:auto;
     position:relative;
+    padding-left: 0;
 
 }
 
@@ -213,7 +214,8 @@ footer h1{
     font-family:"Merienda", sans-serif;
     color:rgb(215, 213, 213); 
     margin:0;
-    font-weight: lighter;
+    font-weight: light;
+    
  
 }
 
@@ -224,6 +226,7 @@ footer h4, footer p{
     font-family:"Merienda", sans-serif;
     color:rgb(111, 108, 108);
     margin:0;
+   
 }
 
 
@@ -284,20 +287,41 @@ input{
     border-radius:8px;
     font-family: inherit;
     padding:5px;
-    /* border-style:none;     */
+    border: 1px solid #ddd;
 }
 
 button{
     border-radius: 8px;
     padding: 5px;
+    border: 1px solid #ddd;
 }
 
 textarea{
     font-family: inherit;
     border-radius:8px;
-    /* border-style: none;12C   6  */
     background-color:#E6DDC6;
 }
+
+/* order */
+
+.order{
+    /* justify-items:end; */
+
+}
+#orderInput{
+    width:65%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+
+
+
+}   
+
+
+
+
 
 
 
