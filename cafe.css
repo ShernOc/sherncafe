@@ -208,7 +208,6 @@ footer{
 }
 
 
-
 footer h1{
     padding-top:10px;
     font-family:"Merienda", sans-serif;
@@ -223,7 +222,7 @@ footer h4, footer p{
     font-size:16px;
     padding-left:30px; 
     font-family:"Merienda", sans-serif;
-    color:rgb(189, 179, 179);
+    color:rgb(111, 108, 108);
     margin:0;
 }
 
@@ -247,12 +246,10 @@ footer h4, footer p{
 /* menu */
 .menu{
     justify-items: center;
-    /* column-count:2; */
     background-image:url("./Images/c12.jpg");
-    background-size:contain;
+    background-size:cover;
     background-repeat:no-repeat;
-    width:%;
-    height:;
+    justify-items: center;
     margin:auto;
     position:relative; 
 
@@ -270,6 +267,41 @@ footer h4, footer p{
 hr{
     border-style:solid;
 }
+
+/* contact us */
+.contact{
+    justify-content:normal;
+    position:relative;
+    justify-items: center;
+    margin:auto;
+    border-radius: 2px;
+    border-style:none;
+}
+
+input{
+    height:30px;
+    background-color: #E6DDC6;
+    border-radius:8px;
+    font-family: inherit;
+    padding:5px;
+    /* border-style:none;     */
+}
+
+button{
+    border-radius: 8px;
+    padding: 5px;
+}
+
+textarea{
+    font-family: inherit;
+    border-radius:8px;
+    /* border-style: none;12C   6  */
+    background-color:#E6DDC6;
+}
+
+
+
+
 
 
 
