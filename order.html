@@ -97,7 +97,8 @@
                 <input type="radio" name="payment" id="" value="Credit Card">Credit Card
                 <br>
                 <br>
-                <input type="submit" id="submit">
+                
+                <button title="submit" id="submit" onclick="alert('Order completed')">Submit</button>
             </fieldset>
             <br>
         </form>
@@ -231,23 +232,7 @@
      </div>
 
      <!-- js -->
-     <script>
-        function myFunction() {
-            var input, filter, ul, li, a, i, txtValue;
-            input = document.getElementById("orderInput");
-            filter = input.value.toUpperCase();
-            ul = document.getElementById("myOrder");
-            li = ul.getElementsByTagName("li");
-            for (i = 0; i < li.length; i++) {
-                a = li[i].getElementsByTagName("a")[0];
-                txtValue = a.textContent || a.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    li[i].style.display = "";
-                } else {
-                    li[i].style.display = "none";
-                }
-            }
-        }
+     <script src="">Welcome
         </script>
  
 </body>
