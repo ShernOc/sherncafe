@@ -1,0 +1,95 @@
+
+<!-- The second option  for orders-->
+        <!-- <h3>Tea</h3>
+        <form action="orders" method="get">
+            <input list="tea-orders" name="tea-orders">
+            <datalist id="tea-orders">
+            <option value="Kenyan Tea - 290">Kenyan Tea - 290</option>
+            <option value="Tangawizi Tea- 290">Tangawizi Tea- 290</option>
+            <option value="Masala Tea  - 290">Masala Tea - 290</option>
+            <option value="Chamomile tea - 290">Chamomile tea - 290</option>
+            <option value="Iced Tea - 300">Iced Tea - 300</option>
+            <option value="Hot Chocolate- 300">Hot Chocolate- 300</option>
+        </datalist>
+        <br>
+        <input type="submit">
+          </form>
+
+          <br>
+        <h3>Pastries</h3>
+        <form action="orders" method="get">
+            <input list="pastries-orders" name="pastries-orders">
+            <datalist id="pastries-orders">
+              <option value="Butter Croissant- 290">Butter Croissant - 290</option>
+            <option value="Chicken Pie - 290">Chicken Pie - 290</option>
+            <option value="Samosas- 290">Samosas- 290</option>
+            <option value="Burger - 890">Burger - 890</option>
+            <option value="Mandaze - 200">Mandaze - 200</option>
+            <option value="Eggs and Toast- 600">Eggs and Toast- 600</option>
+        </datalist>
+        <br>
+        <input type="submit">
+          </form>
+          <br> -->
+
+
+        <!-- Another method -->
+
+        <!-- <select name="coffee" id="coffee" 
+         aria-placeholder="life">
+
+         Search Work
+        <input type="text" id="orderInput"    placeholder="Search for the order" onkeyup="myFunction()">
+            <option value="Double Expresso">Double Expresso - <b>290.00</b></option>
+            <option value="Cappuccino">Cappuccino - <b>290.00</b></option>
+            <option value="Latte">Latte - <b>290.00</b> <br></option>
+            <option value="Hazelnut Mocha">Hazelnut Mocha - <b>300.00</b></option>
+            <option value="Single Coffee ">Single Coffee - <b>250.00</b></option>
+         </select> -->
+
+        <!-- <ul id="myOrder" >
+            <li><a href="./index.html">Double Expresso - <b>290.00</b></a></li>
+            <br>
+            <li>Cappuccino - <b>290.00</b></li>
+            <br>
+            <li>Latte - <b>290.00</b> <br></li> 
+            <br>
+            <li>Hazelnut Mocha - <b>300.00</b></li>
+            <br>
+            <li>Single Coffee - <b>250.00</b></li>
+        </ul>
+
+        <br>
+                
+        <h3>Tea</h3>
+        <ul id="myOrder">
+        <li>Kenyan Tea - <b>290.00</b></li>
+        <br>
+        <li>Tangawizi Tea - <b>290.00</b></li>
+        <br>
+        <li>Masala Tea - <b>290.00</b></li>
+        <br>
+        <li>Dawa - <b>300.00</b></li>
+        <br>
+        <li>Chamomile Tea - <b>290.00</b></li>
+        <br>
+        <li>Iced Tea - <b>300.00</b></li>
+        <br>
+        <li>Hot Chocolate - <b>300.00</b></li>
+        </ul>
+        <br>
+
+        <h3>Pastries</h3>
+        <ul id ="ulOrder">
+        <li>Butter Croissant - <b>290.00</b></li>
+        <br>
+        <li>Chicken Pie - <b>290.00</b></li>
+        <br>
+        <li>Samosas - <b>290.00</b></li>
+        <br>
+        <li>Burger - <b>890.00</b></li>
+        <br>
+        <li>Mandazis - <b>200.00</b></li>
+        <br>
+        <li>Eggs and Toast - <b>600.00</b></li>
+        </ul> -->
