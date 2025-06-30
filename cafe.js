@@ -10,9 +10,12 @@ function order(order){
 }
 
 function coffeeOrder(order){
+  let order = ""
   if (order === "Kenyan Tea - 290"){
     return order
   }else if (order ===  "Tangawizi Tea- 290"){
     return order
   }
-}66-]
+}
+
+// We can use the let 
