@@ -1,26 +1,27 @@
-{"drinkType": [
-    {"drink":"Double Expresso" },
-    {"drink":"Cappuccino" },
-    {"drink":"Latte" },
-    {"drink":"HazelnutMocha" },
-    {"drink":"SingleCoffee" },
-    {"drink":"Kenya Tea" },
-    {"drink":"Tangawizi Tea" },
-    {"drink":"Dawa" },
-    {"drink":"Chamomile Tea" },
-    {"drink":"Iced Tea" },
-    {"drink":"Hot Chocolate" }
-] 
+{"coffeeType": 
 
+    {"1":"Double Expresso" ,
+    "2":"Cappuccino" ,
+    "3":"Latte" ,
+    "4":"HazelnutMocha" ,
+    "5":"SingleCoffee" ,
+    "6":"Kenya Tea" ,
+    "7":"Tangawizi Tea" ,
+    "8":"Dawa" ,
+    "9":"Chamomile Tea",
+    "10":"Iced Tea" ,
+    "11":"Hot Chocolate"
+},
 
+"DessertType":
+    {"1":"Butter Croissant" ,
+    "2":"Chicken Pie" ,
+    "3":"Samosa Burger",
+    "4":"Mandazi",
+    "5":"Eggs and Toast"
+   
+}
 
-{"DessertType": [
-    {"Dessert":"Butter Croissant" },
-    {"Dessert":"Chicken Pie" },
-    {"Dessert":"Samosa Burger"},
-    {"Dessert":"Mandazi" },
-    {"Dessert":"Eggs and Toast" },
-   // {"Dessert":"Double Expresso" },
+}
+ 
 
-
-] }
