@@ -50,7 +50,10 @@
            <p>coffee made with love</p>
            <br>
             <span class="cash">ksh 123</span>
-            <button class="items">Order Now</button>
+            <button class="items" onclick="
+            coffeeOrder('coffee beans');
+
+            ">Order Now</button>
 
 
        </div>
@@ -232,7 +235,12 @@
             <p>coffee made with love</p>
             <br>
             <span class="cash">ksh 123</span>
-            <button class="items">Order Now</button>
+            <button class="items" onclick="
+            coffeeOrder(); 
+            
+            
+            
+            ">Order Now</button>
         </div>
 
 <!-- middle image -->
@@ -266,6 +274,25 @@
      </div>
  
 </body>
+
+<script>
+// created an 
+    let order = ; 
+
+    function coffeeOrder(){
+        if (order=== 'coffee beans'){
+            alert("You have ordered your coffee")
+        }else if(order === 123){
+            alert("Make an order")
+        }else{
+            alert("Your coffee is being prepared")
+        }
+
+    }
+
+
+
+</script>
 
 
 </html>
