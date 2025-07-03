@@ -9,8 +9,11 @@ function order(order){
 
 }
 
+
+// Order the coffee
+
 function coffeeOrder(order){
-  let order = ""
+  let order = ""; 
   if (order === "Kenyan Tea - 290"){
     return order
   }else if (order ===  "Tangawizi Tea- 290"){
