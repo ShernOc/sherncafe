@@ -1,5 +1,7 @@
 // Order to be done
-function order(order){
+
+function priceOrder(){
+  const 
   switch (order){
     case "Kenyan Tea - 290":
       return order 
@@ -11,10 +13,10 @@ function order(order){
 
 
 // Order the coffee
-
-function coffeeOrder(order){
-  let order = ""; 
-  if (order === "Kenyan Tea - 290"){
+let order = '';
+function makeAnOrder(order){
+  if (order === "Kenyan Tea"){
+    if(price = )
     return order
   }else if (order ===  "Tangawizi Tea- 290"){
     return order
