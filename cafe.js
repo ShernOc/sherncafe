@@ -16,7 +16,9 @@ function priceOrder(){
 let order = '';
 function makeAnOrder(order){
   if (order === "Kenyan Tea"){
-    if(price = )
+    if(price =  ){
+
+    }
     return order
   }else if (order ===  "Tangawizi Tea- 290"){
     return order

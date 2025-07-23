@@ -49,9 +49,9 @@
            <h3>Double Espresso</h3>
            <br>
             <span class="cash">ksh 290</span>
-            <button class="items" onclick="
-            coffeeOrder('coffee beans');
 
+            <button class="items" onclick="
+            coffeeOrder('Double Espresso');
             ">Order Now</button>
        </div>
 
@@ -60,15 +60,17 @@
            <h3>Cappuccino</h3>
            <br>
            <span class="cash">ksh 290</span>
-           <button class="items">Order Now</button>
+           <button class="items" onclick="coffeeOrder('Cappuccino'); " >Order Now</button>
+
        </div>
 
         <div class="contents">
             <img src="./Images/c3.jpg" alt="coffee picture1">
             <h3>Latte</h3>
             <br>
-            <span class="cash">ksh 290</span>
-            <button class="items">Order Now</button>
+            <span class="cash"
+            onclick="coffeeOrder('Latter')">ksh 290</span>
+            
         </div>
 
         <div class="contents">
@@ -76,7 +78,7 @@
             <h3>Hazelnut Mocha</h3>
             <br>
             <span class="cash">ksh 300</span>
-            <button class="items">Order Now</button>
+            <button class="items" onclick="coffeeOrder('Hazelnut Mocha')"  >Order Now</button>
         </div>
 
         <div class="contents">
@@ -84,7 +86,7 @@
             <h3>Single Coffee</h3>
             <br>
             <span class="cash">ksh 250</span>
-            <button class="items">Order Now</button>
+            <button class="items" onclick="coffeeOrder('Single Coffee')">Order Now</button>
         </div>
 
         <div class="contents">
@@ -92,7 +94,7 @@
             <h3>Iced Coffee</h3>
             <br>
             <span class="cash">ksh 250</span>
-            <button class="items">Order Now</button>
+            <button class="items" onclick="coffeeOrder('Iced Coffee')">Order Now</button>
         </div>
 
         <br>
@@ -103,7 +105,7 @@
             <h3>Kenyan Tea</h3>
             <br>
             <span class="cash">ksh 290</span>
-            <button class="items">Order Now</button>
+            <button class="items" onclick="coffeeOrder('Kenyan Tea')">Order Now</button>
         </div>
         
         <div class="contents">
@@ -111,7 +113,7 @@
             <h3>Tangawizi Tea</h3>
             <br>
             <span class="cash">ksh 290</span>
-            <button class="items">Order Now</button>
+            <button class="items" onclick="coffeeOrder('Tangawizi Tea')">Order Now</button>
         </div>
 
         <div class="contents">
@@ -119,14 +121,15 @@
             <h3>Masala Tea</h3>
             <br>
             <span class="cash">ksh 290</span>
-            <button class="items">Order Now</button>
+            <button class="items" onclick="coffeeOrder('Masala Tea')">Order Now</button>
         </div>
+
         <div class="contents">
             <img src="./Images/c8.jpg" alt="coffee picture1">
             <h3>Dawa</h3>
             <br>
             <span class="cash">ksh 300</span>
-            <button class="items">Order Now</button>
+            <button class="items" onclick="coffeeOrder('Dawa')">Order Now</button>
         </div>
 
         <div class="contents">
@@ -134,7 +137,7 @@
             <h3>Chamomile Tea</h3>
             <br>
             <span class="cash">ksh 290</span>
-            <button class="items">Order Now</button>
+            <button class="items" onclick="coffeeOrder('Chamomile Tea')">Order Now</button>
         </div>
         
         <div class="contents">
@@ -142,7 +145,7 @@
             <h3>Hot Chocolate</h3>
             <br>
             <span class="cash">ksh 300</span>
-            <button class="items">Order Now</button>
+            <button class="items" onclick="coffeeOrder('Hot Chocolate')">Order Now</button>
         </div>
 
         <br>
@@ -154,7 +157,7 @@
            <h3>Butter Croissant</h3>
            <br>
             <span class="cash">ksh 350</span>
-            <button class="items">Order Now</button>
+            <button class="items" onclick="pastryOrder('Butter Croissant')">Order Now</button>
         </div>
 
         <div class="contents">
@@ -162,7 +165,7 @@
            <h3>Chicken Pie</h3>
            <br>
            <span class="cash">ksh 400</span>
-           <button class="items">Order Now</button>
+           <button class="items" onclick="pastryOrder('Chicken Pie')">Order Now</button>
         </div>
 
         <div class="contents">
@@ -170,7 +173,7 @@
             <h3>Samosas</h3>
             <br>
             <span class="cash">ksh 250</span>
-            <button class="items">Order Now</button>
+            <button class="items" onclick="pastryOrder('Samosas')">Order Now</button>
         </div>
 
         <div class="contents">
@@ -178,7 +181,7 @@
             <h3>Burger with Fries</h3>
             <br>
             <span class="cash">ksh 890</span>
-            <button class="items">Order Now</button>
+            <button class="items" onclick="pastryOrder('Burger with Fries')">Order Now</button>
 
         </div>
 
@@ -187,7 +190,7 @@
             <h3>Mandazis</h3>
             <br>
             <span class="cash">ksh 200</span>
-            <button class="items">Order Now</button>
+            <button class="items" onclick="pastryOrder('Mandazis')">Order Now</button>
         </div>
 
         <div class="contents">
@@ -195,7 +198,7 @@
             <h3>Eggs and Toast</h3>
             <br>
             <span class="cash">ksh 600</span>
-            <button class="items">Order Now</button>
+            <button class="items" onclick="pastryOrder('Eggs and Toast')">Order Now</button>
         </div>
         
 <!-- middle image -->
@@ -232,21 +235,56 @@
 
 <script>
 // created an 
-    let drinkType = ''; 
+    let drinkType =''; 
+    let pastryType ='';
 
-    function coffeeOrder(){
-        if (drinkType === 'coffee beans'){
-            alert("You have ordered your coffee")
-        }else if(order === 123){
-            alert("Make an order")
+    function driOrder(drinkType){
+        if (drinkType === 'Double espresso'){
+            alert("You have ordered Double espresso")
+        }else if(drinkType === 'Cappuccino'){
+            alert("You have ordered Cappuccino")
+            
+        }else if(drinkType === 'Latte'){
+            alert("You have ordered Latte")
+
+        }else if(drinkType === 'Hazelnut Mocha'){
+            alert("You have ordered Hazelnut Mocha")
+        }else if(drinkType === 'Single Coffee'){
+            alert("You have ordered Single Coffee")
+        }else if(drinkType === 'Iced Coffee'){
+            alert("You have ordered Iced Coffee")
+        }else if(drinkType === 'Kenya Tea'){
+            alert("You have ordered Cappuccino")
+        }else if(drinkType === 'Tangawizi Tea'){
+            alert("You have ordered Tangawizi")
+        }else if (drinkType==='Masala Tea'){
+            alert("You have ordered Masala Tea")
+        }else if(drinkType === 'Dawa'){
+            alert('You have ordered Dawa')
+        }else if (drinkType === 'Chamomile Tea'){
+            alert('You have ordered Chamomile Tea')
+        }else if (drinkType === 'Hot Chocolate '){
+            alert ('YOu have ordered Hot Chocolate')
         }else{
-            alert("Your coffee is being prepared")
+            alert("Make an order ")
         }
-
     }
 
-
-
+    function pastryOrder(pastryType){
+        if (pastryType === 'Butter Croissant'){
+            alert("You have ordered Butter Croissant")
+        }else if(pastryType === 'Chicken Pie'){
+            alert("You have ordered Chicken Pie")
+        }else if(pastryType === 'Samosas'){
+            alert("You have ordered Samosas")
+        }else if(pastryType === 'Burger with Fries'){
+            alert("You have ordered Burger with Fries")
+        }else if(pastryType === 'Mandazis'){
+            alert("You have ordered Mandazis")
+        }else if(pastryType === 'Eggs and Toast'){
+            alert("You have ordered Eggs and Toast")
+        }else {alert('Order your toast')}
+    }
 </script>
 
 
