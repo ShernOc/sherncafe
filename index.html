@@ -46,55 +46,55 @@
 
         <div class="contents">
             <img src="./Images/c1.jpg" alt="coffee picture1">
-           <h3>Double Espresso</h3>
+           <h3 class="js-title">Double Espresso</h3>
            <br>
             <span class="cash">ksh 290</span>
 
-            <button class="items" onclick="
-            coffeeOrder('Double Espresso');
+            <button class="items" onclick="driOrder('Double Espresso');
             ">Order Now</button>
        </div>
 
         <div class="contents">
             <img src="./Images/c2.jpg" alt="coffee picture1">
-           <h3>Cappuccino</h3>
+           <h3 class="js-title">Cappuccino</h3>
            <br>
            <span class="cash">ksh 290</span>
-           <button class="items" onclick="coffeeOrder('Cappuccino'); " >Order Now</button>
+           <button class="items" onclick="driOrder('Cappuccino');" >Order Now</button>
 
        </div>
 
         <div class="contents">
             <img src="./Images/c3.jpg" alt="coffee picture1">
-            <h3>Latte</h3>
+            <h3 class="js-title">Latte</h3>
             <br>
-            <span class="cash"
-            onclick="coffeeOrder('Latter')">ksh 290</span>
+            <span class="cash">ksh 290</span>
+            <button class ="items"  
+            onclick="driOrder('Latter');"> Order Now</button>
             
         </div>
 
         <div class="contents">
             <img src="./Images/c6.jpg" alt="coffee picture1">
-            <h3>Hazelnut Mocha</h3>
+            <h3 class="js-title">Hazelnut Mocha</h3>
             <br>
             <span class="cash">ksh 300</span>
-            <button class="items" onclick="coffeeOrder('Hazelnut Mocha')"  >Order Now</button>
+            <button class="items" onclick="driOrder('Hazelnut Mocha')"  >Order Now</button>
         </div>
 
         <div class="contents">
             <img src="./Images/c6.jpg" alt="coffee picture1">
-            <h3>Single Coffee</h3>
+            <h3 class="js-title">Single Coffee</h3>
             <br>
             <span class="cash">ksh 250</span>
-            <button class="items" onclick="coffeeOrder('Single Coffee')">Order Now</button>
+            <button class="items" onclick="driOrder('Single Coffee')">Order Now</button>
         </div>
 
         <div class="contents">
             <img src="./Images/c1.jpg" alt="coffee picture1">
-            <h3>Iced Coffee</h3>
+            <h3 class="js-title">Iced Coffee</h3>
             <br>
             <span class="cash">ksh 250</span>
-            <button class="items" onclick="coffeeOrder('Iced Coffee')">Order Now</button>
+            <button class="items" onclick="driOrder('Iced Coffee')">Order Now</button>
         </div>
 
         <br>
@@ -102,50 +102,50 @@
     <h1>OUR TEAS</h1>
         <div class="contents">
             <img src="./Images/c3.jpg" alt="coffee picture1">
-            <h3>Kenyan Tea</h3>
+            <h3 class="js-title">Kenyan Tea</h3>
             <br>
             <span class="cash">ksh 290</span>
-            <button class="items" onclick="coffeeOrder('Kenyan Tea')">Order Now</button>
+            <button class="items" onclick="driOrder('Kenyan Tea')">Order Now</button>
         </div>
         
         <div class="contents">
             <img src="./Images/c8.jpg" alt="coffee picture1">
-            <h3>Tangawizi Tea</h3>
+            <h3 class="js-title">Tangawizi Tea</h3>
             <br>
             <span class="cash">ksh 290</span>
-            <button class="items" onclick="coffeeOrder('Tangawizi Tea')">Order Now</button>
+            <button class="items" onclick="driOrder('Tangawizi Tea')">Order Now</button>
         </div>
 
         <div class="contents">
             <img src="./Images/c2.jpg" alt="coffee picture1">
-            <h3>Masala Tea</h3>
+            <h3 class="js-title">Masala Tea</h3>
             <br>
             <span class="cash">ksh 290</span>
-            <button class="items" onclick="coffeeOrder('Masala Tea')">Order Now</button>
+            <button class="items" onclick="driOrder('Masala Tea')">Order Now</button>
         </div>
 
         <div class="contents">
             <img src="./Images/c8.jpg" alt="coffee picture1">
-            <h3>Dawa</h3>
+            <h3 class="js-title">Dawa</h3>
             <br>
             <span class="cash">ksh 300</span>
-            <button class="items" onclick="coffeeOrder('Dawa')">Order Now</button>
+            <button class="items" onclick="driOrder('Dawa')">Order Now</button>
         </div>
 
         <div class="contents">
             <img src="./Images/c2.jpg" alt="coffee picture1">
-            <h3>Chamomile Tea</h3>
+            <h3 class="js-title">Chamomile Tea</h3>
             <br>
             <span class="cash">ksh 290</span>
-            <button class="items" onclick="coffeeOrder('Chamomile Tea')">Order Now</button>
+            <button class="items" onclick="driOrder('Chamomile Tea')">Order Now</button>
         </div>
         
         <div class="contents">
             <img src="./Images/c2.jpg" alt="coffee picture1">
-            <h3>Hot Chocolate</h3>
+            <h3 class="js-title">Hot Chocolate</h3>
             <br>
             <span class="cash">ksh 300</span>
-            <button class="items" onclick="coffeeOrder('Hot Chocolate')">Order Now</button>
+            <button class="items" onclick="driOrder('Hot Chocolate')">Order Now</button>
         </div>
 
         <br>
@@ -235,42 +235,61 @@
 
 <script>
 // created an 
-    let drinkType =''; 
+    //let drinkType ='';  
     let pastryType ='';
 
     function driOrder(drinkType){
-        if (drinkType === 'Double espresso'){
-            alert("You have ordered Double espresso")
-        }else if(drinkType === 'Cappuccino'){
-            alert("You have ordered Cappuccino")
-            
-        }else if(drinkType === 'Latte'){
-            alert("You have ordered Latte")
+        const orderBtn=document.getElementsByTagName('button');
+       // const titleName = document.querySelector('.js-title');
 
-        }else if(drinkType === 'Hazelnut Mocha'){
-            alert("You have ordered Hazelnut Mocha")
-        }else if(drinkType === 'Single Coffee'){
-            alert("You have ordered Single Coffee")
-        }else if(drinkType === 'Iced Coffee'){
-            alert("You have ordered Iced Coffee")
-        }else if(drinkType === 'Kenya Tea'){
-            alert("You have ordered Cappuccino")
-        }else if(drinkType === 'Tangawizi Tea'){
-            alert("You have ordered Tangawizi")
-        }else if (drinkType==='Masala Tea'){
-            alert("You have ordered Masala Tea")
-        }else if(drinkType === 'Dawa'){
-            alert('You have ordered Dawa')
-        }else if (drinkType === 'Chamomile Tea'){
-            alert('You have ordered Chamomile Tea')
-        }else if (drinkType === 'Hot Chocolate '){
-            alert ('YOu have ordered Hot Chocolate')
+        if (orderBtn.innerText ==='Order Now' 
+        //&& titleName.innerText === drinkType
+        ){
+            orderBtn.innerText = 'Ordered'
         }else{
-            alert("Make an order ")
+            orderBtn.innerText = 'Order Now'
         }
+
+        // Want when the use clicks the order button and also the order is correct meaning if its double expresso it provides an alert that say ("You have ordered Double expresson")
+        
+        /*else if(drinkType === 'Double espresso'){
+                orderBtn.innerText === 'Ordered'
+            }else if(drinkType === 'Cappuccino'){
+               orderBtn.innerText = 'Ordered'
+
+            }else if(drinkType === 'Latte'){
+               orderBtn.innerText === 'Ordered'
+                
+            }else if(drinkType === 'Hazelnut Mocha'){
+               orderBtn.innerText === 'Ordered'
+            }else if(drinkType === 'Single Coffee'){
+              orderBtn.innerText === 'Ordered'
+            }else if(drinkType === 'Iced Coffee'){
+                orderBtn.innerText === 'Ordered'
+            }else if(drinkType === 'Kenya Tea'){
+                orderBtn.innerText === 'Ordered'
+            }else if(drinkType === 'Tangawizi Tea'){
+                orderBtn.innerText === 'Ordered'
+            }else if (drinkType==='Masala Tea'){
+                orderBtn.innerText === 'Ordered'
+            }else if(drinkType === 'Dawa'){
+                orderBtn.innerText === 'Ordered'
+            }else if (drinkType === 'Chamomile Tea'){
+                orderBtn.innerText === 'Ordered'
+            }else if (drinkType === 'Hot Chocolate '){
+                orderBtn.innerText === 'Ordered'
+            }
+            else
+            {alert("What am i doing?")}
+        }*/
     }
 
+
+      
+
     function pastryOrder(pastryType){
+
+
         if (pastryType === 'Butter Croissant'){
             alert("You have ordered Butter Croissant")
         }else if(pastryType === 'Chicken Pie'){
@@ -285,6 +304,8 @@
             alert("You have ordered Eggs and Toast")
         }else {alert('Order your toast')}
     }
+
+
     
 </script>
 
