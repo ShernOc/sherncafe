@@ -50,7 +50,7 @@
            <br>
             <span class="cash">ksh 290</span>
 
-            <button class="items" onclick="driOrder('Double Espresso');
+            <button class="items" id="drink1" onclick="driOrder('Double Espresso');
             ">Order Now</button>
        </div>
 
@@ -59,7 +59,7 @@
            <h3 class="js-title">Cappuccino</h3>
            <br>
            <span class="cash">ksh 290</span>
-           <button class="items" onclick="driOrder('Cappuccino');" >Order Now</button>
+           <button class="items" id="drink2" onclick="driOrder('Cappuccino');" >Order Now</button>
 
        </div>
 
@@ -157,7 +157,7 @@
            <h3>Butter Croissant</h3>
            <br>
             <span class="cash">ksh 350</span>
-            <button class="items" onclick="pastryOrder('Butter Croissant')">Order Now</button>
+            <button class="items" id="pastry1" onclick="pastryOrder('Butter Croissant')">Order Now</button>
         </div>
 
         <div class="contents">
@@ -235,74 +235,32 @@
 
 <script>
 // created an 
-    //let drinkType ='';  
+// Goal to be able to change the text of all the buttons to Ordered once the button is clicked, 
+// Once the button is clicked with the right amount it altered to ordered. 
+
+    let drinkType ='';  
     let pastryType ='';
 
     function driOrder(drinkType){
-        const orderBtn=document.getElementsByTagName('button');
-       // const titleName = document.querySelector('.js-title');
-
-        if (orderBtn.innerText ==='Order Now' 
-        //&& titleName.innerText === drinkType
-        ){
+        const orderBtn=document.querySelector('#drink1');
+        const orderBtn2=document.querySelector('#drink2');
+        
+        if (orderBtn.innerText === 'Order Now'){
             orderBtn.innerText = 'Ordered'
         }else{
             orderBtn.innerText = 'Order Now'
         }
-
-        // Want when the use clicks the order button and also the order is correct meaning if its double expresso it provides an alert that say ("You have ordered Double expresson")
         
-        /*else if(drinkType === 'Double espresso'){
-                orderBtn.innerText === 'Ordered'
-            }else if(drinkType === 'Cappuccino'){
-               orderBtn.innerText = 'Ordered'
-
-            }else if(drinkType === 'Latte'){
-               orderBtn.innerText === 'Ordered'
-                
-            }else if(drinkType === 'Hazelnut Mocha'){
-               orderBtn.innerText === 'Ordered'
-            }else if(drinkType === 'Single Coffee'){
-              orderBtn.innerText === 'Ordered'
-            }else if(drinkType === 'Iced Coffee'){
-                orderBtn.innerText === 'Ordered'
-            }else if(drinkType === 'Kenya Tea'){
-                orderBtn.innerText === 'Ordered'
-            }else if(drinkType === 'Tangawizi Tea'){
-                orderBtn.innerText === 'Ordered'
-            }else if (drinkType==='Masala Tea'){
-                orderBtn.innerText === 'Ordered'
-            }else if(drinkType === 'Dawa'){
-                orderBtn.innerText === 'Ordered'
-            }else if (drinkType === 'Chamomile Tea'){
-                orderBtn.innerText === 'Ordered'
-            }else if (drinkType === 'Hot Chocolate '){
-                orderBtn.innerText === 'Ordered'
-            }
-            else
-            {alert("What am i doing?")}
-        }*/
     }
 
-
-      
-
-    function pastryOrder(pastryType){
-
-
-        if (pastryType === 'Butter Croissant'){
-            alert("You have ordered Butter Croissant")
-        }else if(pastryType === 'Chicken Pie'){
-            alert("You have ordered Chicken Pie")
-        }else if(pastryType === 'Samosas'){
-            alert("You have ordered Samosas")
-        }else if(pastryType === 'Burger with Fries'){
-            alert("You have ordered Burger with Fries")
-        }else if(pastryType === 'Mandazis'){
-            alert("You have ordered Mandazis")
-        }else if(pastryType === 'Eggs and Toast'){
-            alert("You have ordered Eggs and Toast")
-        }else {alert('Order your toast')}
+   function pastryOrder(pastryType){
+        const pastries=document.querySelector('#pastry1');
+        
+        if (pastries.innerText === 'Order Now'){
+            pastries.innerText = 'Ordered'
+        }else{
+            pastries.innerText = 'Order Now'
+        }
     }
 
 
