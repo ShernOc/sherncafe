@@ -42,13 +42,24 @@
     <!-- main -->
     <div class="main">
         <div class="order">
-            <form action="all-orders" method="get">
-            <h1>Make Your Order ..</h1>
-            <br>
-            <input list="orders" name="orders" id="search" placeholder="Search ">
-            <br>
             
+            <form action="all-orders" method="get">
+            <h1>Make Your Order</h1>
             <br>
+            <!-- <p> Order over 200 = <b>10% tax
+            <br>
+            </b>Order under 100 = <b>No tax</b>
+            </p>
+            <br>
+
+            <input list="orders" name="orders" id="search" placeholder="Search " onkeydown="makeOrder();">
+            <br>
+            <button onclick="makeOrder()" class="js-btn-order"
+            
+            >Calculate</button>
+
+            <p class="js-order">Total Orders: </p> -->
+
             <datalist id="orders">
                 <h3>Coffees</h3>
                 <option value="Double Espresso - 290">Double Espresso - 290</option>
@@ -80,7 +91,7 @@
             </datalist>
             <br>
             <br>
-            <!-- <fieldset>
+             <fieldset>
                 <legend><b>Billing Method</b></legend>
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="name" placeholder="Full names">
@@ -93,17 +104,32 @@
                 <br><br>
                 <b> Mode of payment</b>
                 <br>
+
+                <p> Order over 200 = <b>10% tax
+            <br>
+            </b>Order under 100 = <b>No tax</b>
+        </p>
+            <br>
+            <input name="orders" id="search" placeholder="Payment" class="js-input-orders" onkeydown="handleKeydown(event);">
+            <br>
+
+            <button onclick="makeOrder()"
+            >Calculate</button>
+
+            <h4>Total Payment:</h4>
+            <p class="js-total-cost"></p>
                 <input type="radio" name="payment" id="" value="Mpesa">Mpesa 
                 
                 <input type="radio" name="payment" id="" value="Credit Card">Credit Card
                 <br>
-                <br> -->
+                <br> 
 
                 <button title="submit" id="submit" onclick="
                 console.log(order)
                 
                // alert('Order completed')"
                 >Submit</button>
+                
             </fieldset>
             <br>
         </form>
@@ -142,35 +168,7 @@
         </footer>
      </div>
 
-     <!-- js -->
-     <script>
-        const order = 290; 
 
-    </script>
- 
+ <script src="cafe.js"></script>
 </body>
-
-
-<script>
-
-// Order the coffee
-function coffeeOrder(order){
-  let order = ""; 
-  if (order === "Cappucciono"){
-
-    return order
-  }else if (order ===  "Tangawizi Tea- 290"){
-    return order
-  }
-}
-
-
-
-
-
-
-
-
-</script>
-
 </html>

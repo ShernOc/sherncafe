@@ -48,7 +48,8 @@
             <img src="./Images/c1.jpg" alt="coffee picture1">
            <h3 class="js-title">Double Espresso</h3>
            <br>
-            <span class="cash">ksh 290</span>
+            <p class="cash">ksh 290</p>
+        
 
             <button class="items" id="drink1" onclick="driOrder('Double Espresso');
             ">Order Now</button>
@@ -233,40 +234,7 @@
  
 </body>
 
-<script>
-// created an 
-// Goal to be able to change the text of all the buttons to Ordered once the button is clicked, 
-// Once the button is clicked with the right amount it altered to ordered. 
-
-    let drinkType ='';  
-    let pastryType ='';
-
-    function driOrder(drinkType){
-        const orderBtn=document.querySelector('#drink1');
-        const orderBtn2=document.querySelector('#drink2');
-        
-        if (orderBtn.innerText === 'Order Now'){
-            orderBtn.innerText = 'Ordered'
-        }else{
-            orderBtn.innerText = 'Order Now'
-        }
-        
-    }
-
-   function pastryOrder(pastryType){
-        const pastries=document.querySelector('#pastry1');
-        
-        if (pastries.innerText === 'Order Now'){
-            pastries.innerText = 'Ordered'
-        }else{
-            pastries.innerText = 'Order Now'
-        }
-    }
-
-
-    
+<script src="cafe.js">
 </script>
 
-<!-- <script src="cafe.js">
-</script> -->
 </html>
