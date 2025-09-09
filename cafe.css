@@ -41,7 +41,6 @@ body,html{
     padding-left:10px;
     font-family:"Merienda", sans-serif;
     color:rgb(215, 213, 213); 
-    margin:0;
     font-weight: lighter;
  
 }
@@ -82,7 +81,7 @@ li{
     color:rgb(215, 213, 213);
     display:inline-block;
     justify-content:space-evenly;
-    padding-left:60px;
+    padding-left:20px;
 }
 
 nav{
