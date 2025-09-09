@@ -55,5 +55,23 @@ function handleKeydown(event){
 }
 
 
+// Login 
+function loginFun(){
+    const loginDiv = document.querySelector('.js-form').innerHTML= 'You got this';
+    console.log(loginDiv);
+    
+}
 
+console.log(loginFun);
+
+
+
+
+
+
+
+// '<div class='cs-login'> <p>you got this </p> <div>
+
+
+// '
 
