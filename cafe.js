@@ -65,13 +65,13 @@ function loginFun(){
 console.log(loginFun);
 
 
+function confirmLogin(){
+    let loginLol = document.forms['register']['login']['contact-form'].value;
+    if (loginLol == ""){
+        alert('Form must be filled');
+        return false
+    }
+}
 
 
-
-
-
-// '<div class='cs-login'> <p>you got this </p> <div>
-
-
-// '
 

@@ -72,6 +72,7 @@ body,html{
     color:#353430;
     font-size: 16px;
     font-weight: bold;
+
 }
 
 li{
@@ -344,6 +345,15 @@ fieldset{
     border:none;
 }
 
+
+
+.txt_input input{
+    border:none; 
+    background: none;
+    outline: none;
+
+
+}
 
 
 

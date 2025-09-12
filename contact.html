@@ -48,7 +48,7 @@
                 <h1>Contact us.....</h1>
                 <br>
         <!-- contact form -->
-         <form action="contact-form" class="js-form"> 
+         <form action="contact-form" class="js-form" name="contact-form"> 
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" size="36" placeholder="Full name">
             <br>
@@ -68,18 +68,74 @@
             <br>
         <button id="submit">Submit</button>
          </form>
+<br>
+<hr>
+<!-- registration and Login form -->
+ <div class="cs-create-login">
 
+    <h3>Create an Account </h3>
+    <br>
+    <form action="register" method="post" name="register"required>
 
-         
-         
-         <br>
-         <h2>Connect with us</h2>
+    <label for="name">Your Name</label>
+    <br>
+    <input type="text" name="user-name" id="Name" placeholder="Name" required class="txt_input" >
+    <br><br>
+    <label for="email">Email Address</label>
+    <br>
+    <input type="email" name="email" id="email" required placeholder="name@email.com" class="txt_input" >
+    <br><br>
+    <label for="password">Password</label>
+    <br>
+    <input type="password" name="password" id="password"  placeholder="password"  class="txt_input" >
+    <br><br>
+    <label for="confirm-password">Confirm password</label>
+    <br>
+    <input type="password" name="repeat-password" id="confirmpassword" placeholder=" confirm password" class="txt_input" >
+    <label for=""></label>
+    <br><br>
+
+    <input type="submit" name="register" value="Register" id="register2">
+
+    <br><br>
+    <p class="'user-signup">Have an account? <a href="#"><b>Login</b></a></p>
+    </form>
+ <br>
+<hr>
+ <!-- Login form  -->
+    <h3>Login </h3>
+    <br>
+    <form action="login" name="login" method="post" required onsubmit="return confirmLogin()">
+
+    <label for="email">Email Address</label>
+    <br>
+    <input type="name" class="txt_input" placeholder="name@email.com" required>
+    <br><br>
+    <label for="u-password">Password</label>
+    <br>
+    <input type="password" name="user-password"  class="txt_input" id="password"  placeholder="password" required>
+    <br>
+
+    <label><input type="checkbox" name="remember" checked= "checked">Remember me</label>
+    <br><br>
+    <span class="forgot-psd">Forgot Password</span>
+    <br><br>
+
+    <button type="submit" class="cs-login-btn">Login</button>
+    <br>
+    <!-- <label for="forgot-password">Forgot Password</label> -->
+ </form>
+<br>
+ <hr>
+
+ <h2>Connect with us</h2>
          <br>
          <p><i>Customer Care</i> <br><i>sherlynea8622@gmail.com</i>
         <br>
         <br>
         <i>Order for Delivery</i> <br><i>0723457890</i></p>
-        </div>
+</div>
+</div>
         <br>
 <!-- middle image -->
         <div class="image">
