@@ -66,7 +66,7 @@ console.log(loginFun);
 
 
 function confirmLogin(){
-    let loginLol = document.forms['register']['login']['contact-form'].value;
+    let loginLol = document.forms['login']['login-name']['contact-form'].value;
     if (loginLol == ""){
         alert('Form must be filled');
         return false
