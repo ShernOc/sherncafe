@@ -1,8 +1,74 @@
-
-// index.html
-
 // Goal to be able to change the text of all the buttons to Ordered once the button is clicked, 
 // Once the button is clicked with the right amount it altered to ordered. 
+
+// Add the products: object
+const drinks = [
+    {
+    id: 1, drinkType: 'Double Espresso', 
+    price: '290'},
+     {
+    id: 2, drinkType: 'Cappuccino', 
+    price: '290'},
+     {
+    id: 3, drinkType: 'Latte', 
+    price: '290'},
+     {
+    id: 4, drinkType: 'Hazelnut Mocha', 
+    price: '300'},
+     {
+    id: 5, drinkType: 'Single Coffee', 
+    price: '250'},
+     {
+    id: 6, drinkType: 'Iced Coffee', 
+    price: '290'},
+
+     {
+    id: 7, drinkType: 'Kenyan tea', 
+    price: '290'},
+
+     {
+    id: 8, drinkType: 'Tangawizi Tea', 
+    price: '290'},
+
+     {
+    id: 1, drinkType: 'Masala Tea', 
+    price: '290'},
+
+     {
+    id: 1, drinkType: 'Dawa', 
+    price: '300'},
+
+     {
+    id: 1, drinkType: 'Chamomile Tea', 
+    price: '290'},
+
+     {
+    id: 1, drinkType: 'Hot Chocolate', 
+    price: '300'},
+]
+
+const pastries = [
+    {
+    id: 1, pastryType: 'Butter Croissant', 
+    price: '350'},
+     {
+    id: 2, pastryType: 'Chicken Pie', 
+    price: '290'},
+     {
+    id: 3, pastryType: 'Samosas', 
+    price: '290'},
+     {
+    id: 4, pastryType: 'Burger with Fries', 
+    price: '300'},
+     {
+    id: 5, pastryType: 'Mandazis', 
+    price: '250'},
+     {
+    id: 6, pastryType: 'Eggs and Toast', 
+    price: '290'},
+
+    ]
+
 
     let drinkType ='';  
     let pastryType ='';
