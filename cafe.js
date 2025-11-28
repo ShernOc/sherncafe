@@ -69,21 +69,64 @@ const pastries = [
 
     ]
 
-
+    // Used the DOM  to try to ordered to ordered when the button is clicked 
+    // take all the products: // global variables: 
+    const double = document.querySelector('#js-double');
+    const capo = document.querySelector('#js-capo'); 
+    const latte = document.querySelector('#js-latte');
+    const haze = document.querySelector('#js-haze');
+    const coffee = document.querySelector('#js-coffee');
+    const iceCoffee = document.querySelector('#js-iceCoffee');
+    
+    // the button 
+  
     let drinkType ='';  
     let pastryType ='';
 
-    function driOrder(drinkType){
-        const orderBtn=document.querySelector('#drink1');
-        const orderBtn2=document.querySelector('#drink2');
+    function doubleEspresso(){
+        // selects all the buttons with class named items
+        const orderButton = document.querySelectorAll('.items');
+
+        if(orderButton.innerText === 'Order Now'){
+              orderButton.innerText = 'Ordered';   
+        }else{
+            orderButton.innerText = 'Order Now' // returns to order
+        }
+        return orderButton;
+    }
+
+    // console.log(doubleEspresso())
+
+// // Second Attempt: 
+//     function doubleEspresso(){
+//         // selects all the buttons with class named items
+//         const orderButton = document.querySelector('.items');
         
-        if (orderBtn.innerText === 'Order Now'){
+//     //cafe.js:91 Uncaught TypeError: orderButton.forEach is not a function
+//     // at doubleEspresso (cafe.js:91:21)
+//         // Using for each button 
+
+//         orderButton.forEach(button => {
+//             button.addEventListener('click',()=>{button.innerText = 'Ordered';})
+          
+//          })
+//         return orderButton;
+//     }
+
+
+    function driOrder(drinkType){
+        const orderBtn=document.querySelector('.items');
+        // const orderBtn2=document.querySelector('#drink2');
+        
+        if (orderBtn.innerText === 'Order Now' && drinkType === 'Double Espresso'){
             orderBtn.innerText = 'Ordered'
         }else{
             orderBtn.innerText = 'Order Now'
         }
         
     }
+
+    console.log(driOrder('Double Espresso'))
 
    function pastryOrder(pastryType){
         const pastries=document.querySelector('#pastry1');
@@ -128,7 +171,7 @@ function loginFun(){
     
 }
 
-console.log(loginFun);
+// console.log(loginFun);
 
 
 function confirmLogin(){
