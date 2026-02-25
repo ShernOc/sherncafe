@@ -83,17 +83,21 @@ const pastries = [
     let drinkType ='';  
     let pastryType ='';
 
-    function doubleEspresso(){
+    function OrderButton(){
         // selects all the buttons with class named items
-        const orderButton = document.querySelectorAll('.items');
-
-        if(orderButton.innerText === 'Order Now'){
-              orderButton.innerText = 'Ordered';   
+        let orderBtn = document.querySelectorAll('.items');
+        orderBtn.forEach((button=>{
+            button.addEventListener("click", function(e) { if(button.innerHTML === 'Order Now'){
+              button.innerText = 'Ordered';   
         }else{
-            orderButton.innerText = 'Order Now' // returns to order
-        }
-        return orderButton;
-    }
+            button.innerText = 'Order Now' // returns to order
+        }}
+        
+        )} ))
+    
+        return orderBtn;
+    };
+
 
     // console.log(doubleEspresso())
 
@@ -114,19 +118,19 @@ const pastries = [
 //     }
 
 
-    function driOrder(drinkType){
-        const orderBtn=document.querySelector('.items');
-        // const orderBtn2=document.querySelector('#drink2');
+    // function driOrder(drinkType){
+    //     const orderBtn=document.querySelector('.items');
+    //     // const orderBtn2=document.querySelector('#drink2');
         
-        if (orderBtn.innerText === 'Order Now' && drinkType === 'Double Espresso'){
-            orderBtn.innerText = 'Ordered'
-        }else{
-            orderBtn.innerText = 'Order Now'
-        }
+    //     if (orderBtn.innerText === 'Order Now' && drinkType === 'Double Espresso'){
+    //         orderBtn.innerText = 'Ordered'
+    //     }else{
+    //         orderBtn.innerText = 'Order Now'
+    //     }
         
-    }
+    // }
 
-    console.log(driOrder('Double Espresso'))
+    // console.log(driOrder('Double Espresso'))
 
    function pastryOrder(pastryType){
         const pastries=document.querySelector('#pastry1');
