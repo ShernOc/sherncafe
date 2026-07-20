@@ -46,6 +46,7 @@ const drinks = [
     id: 1, drinkType: 'Hot Chocolate', 
     price: '300'},
 ]
+console.log(typeof drinks) // its an object 
 
 const pastries = [
     {
@@ -53,19 +54,19 @@ const pastries = [
     price: '350'},
      {
     id: 2, pastryType: 'Chicken Pie', 
-    price: '290'},
+    price: '400'},
      {
     id: 3, pastryType: 'Samosas', 
-    price: '290'},
-     {
-    id: 4, pastryType: 'Burger with Fries', 
-    price: '300'},
-     {
-    id: 5, pastryType: 'Mandazis', 
     price: '250'},
      {
+    id: 4, pastryType: 'Burger with Fries', 
+    price: '890'},
+     {
+    id: 5, pastryType: 'Mandazis', 
+    price: '200'},
+     {
     id: 6, pastryType: 'Eggs and Toast', 
-    price: '290'},
+    price: '560'},
 
     ]
 
@@ -99,7 +100,7 @@ const pastries = [
     };
 
 
-    // console.log(doubleEspresso())
+// console.log(doubleEspresso())
 
 // // Second Attempt: 
 //     function doubleEspresso(){
@@ -110,7 +111,7 @@ const pastries = [
 //     // at doubleEspresso (cafe.js:91:21)
 //         // Using for each button 
 
-//         orderButton.forEach(button => {
+//orderButton.forEach(button => {
 //             button.addEventListener('click',()=>{button.innerText = 'Ordered';})
           
 //          })
